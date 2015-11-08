@@ -1,6 +1,7 @@
 #include "atimer.h"
-#include"utils.h"
-
+#ifdef LINUX
+#include"lib/utils.h"
+#endif
 bool ATimer::tick(){
     if(!_enabled)
         return false;
