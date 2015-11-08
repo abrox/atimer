@@ -18,4 +18,4 @@ QMAKE_CXXFLAGS += -DLINUX
 QMAKE_CXXFLAGS += -DMQTT_DEBUG
 
 OTHER_FILES += \
-    examples/simpletimer.ino
+    examples/simpletimer/simpletimer.ino

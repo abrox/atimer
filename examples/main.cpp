@@ -19,10 +19,6 @@ public:
         cout << "Hi from bob g point :-) \n";
     }
 };
-void oneSec(){
-    cout << "One sec.....\n";
-}
-
 int main()
 {
     ATimer t(&foo);

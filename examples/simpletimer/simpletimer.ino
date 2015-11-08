@@ -1,22 +1,17 @@
-include"atimer.h"
-#include "mqttclientdefs.h"
-#include"utils.h"
-#include "nrf24net.h"
-#include "mqttsnclient.h"
 
-
+#include"atimer.h"
 
 void foo(){
-    cout << "Hello from foo\n";
+   Serial.println(F("foo caling earth"));
 }
 
 class Bob{
 public:
     void f(){
-        cout << "Hi from bob f\n";
+        Serial.println(F("Hello from F"));
     }
     void g(){
-        cout << "Hi from bob g point :-) \n";
+        Serial.println(F("Hello from G"));
     }
 };
 
@@ -30,7 +25,6 @@ ATimer *timers[COUNT]={&t,&t2,&t3};
 void setup() {
   Serial.begin(115200);
   Serial.println(F("Starting"));
-
 
   t.start(1000);
   t2.start(2000);
