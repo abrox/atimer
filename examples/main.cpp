@@ -1,3 +1,5 @@
+#ifndef ARDUINO
+
 #include <iostream>
 #include "atimer.h"
 #include <unistd.h>
@@ -46,3 +48,4 @@ int main()
     return 0;
 }
 
+#endif

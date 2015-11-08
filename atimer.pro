@@ -3,7 +3,7 @@ CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
 
-SOURCES += main.cpp \
+SOURCES += examples/main.cpp \
     atimer.cpp \
     ../mqttsn/lib/utils.cpp
 
@@ -16,3 +16,6 @@ INCLUDEPATH +=../mqttsn/lib/
 
 QMAKE_CXXFLAGS += -DLINUX
 QMAKE_CXXFLAGS += -DMQTT_DEBUG
+
+OTHER_FILES += \
+    examples/simpletimer.ino
